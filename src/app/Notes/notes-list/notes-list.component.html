@@ -1,0 +1,9 @@
+<app-notes-add-form (noteAdd)="addNote($event)"></app-notes-add-form>
+
+<h3>Created Notes</h3>
+<div *ngIf="this.notes.length === 0; else elseBlock">No Notes to Display</div>
+<ng-template #elseBlock>
+    <div *ngFor="let note of notes">
+        <app-note [note]="note" (noteDelete)="deleteNote($event)"> </app-note>
+    </div>
+</ng-template>

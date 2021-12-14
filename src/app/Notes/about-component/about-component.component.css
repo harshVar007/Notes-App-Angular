@@ -1,0 +1,18 @@
+a{
+    
+    color: grey;
+    margin : 10px 10px 10px 10px;
+}
+
+nav{
+
+   background-color: black;
+    height: 30px;
+
+}
+
+a:hover{
+
+   color: white;
+
+}
